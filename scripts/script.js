@@ -27,7 +27,7 @@ function lightCheck() {
   console.log(lightSwitchStatus);
 }
 
-getElementsByClassName('lightSwitch').addEventListener("click", lightSwitch);
+document.getElementsByClassName('lightSwitch').addEventListener("click", lightSwitch);
 
 function lightSwitch() {
 
@@ -71,7 +71,7 @@ function resizeInstance(instance) {
 let overlay = document.getElementById("overlay");
 let trigger = document.getElementById("trigger");
 
-getElementsByClassName('toggleOverlay').addEventListener("click", toggleOverlay);
+document.getElementsByClassName('toggleOverlay').addEventListener("click", toggleOverlay);
 
 function toggleOverlay() {
   overlay.classList.toggle("show");
