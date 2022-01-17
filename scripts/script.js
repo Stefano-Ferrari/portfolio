@@ -47,7 +47,7 @@ function lightSwitch() {
 }
 
 for(var i=0;i<lightSwitchButton.length;i++){
-    lightSwitchButton[i].addEventListener('click', lightSwitchButton, false);
+    lightSwitchButton[i].addEventListener('click', lightSwitch, false);
 }
 
 function resizeGridItem(item) {
