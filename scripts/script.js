@@ -27,7 +27,7 @@ function lightCheck() {
   console.log(lightSwitchStatus);
 }
 
-document.getElementsByClassName('lightSwitch').addEventListener("click", lightSwitch);
+let lightSwitchButton = document.getElementsByClassName("lightSwitch");
 
 function lightSwitch() {
 
@@ -44,6 +44,10 @@ function lightSwitch() {
     localStorage.setItem("currentStatus", lightSwitchStatus);
     switchIMG.setAttribute("src", "images/switch-bright.svg");
   }
+}
+
+for(var i=0;i<lightSwitchButton.length;i++){
+    lightSwitchButton[i].addEventListener('click', lightSwitchButton, false);
 }
 
 function resizeGridItem(item) {
@@ -71,11 +75,15 @@ function resizeInstance(instance) {
 let overlay = document.getElementById("overlay");
 let trigger = document.getElementById("trigger");
 
-document.getElementsByClassName('toggleOverlay').addEventListener("click", toggleOverlay);
+let toggleOverlayButton = document.getElementsByClassName("toggleOverlay");
 
 function toggleOverlay() {
   overlay.classList.toggle("show");
   trigger.classList.toggle("show");
+}
+
+for(var i=0;i<toggleOverlayButton.length;i++){
+    toggleOverlayButton[i].addEventListener('click', toggleOverlay, false);
 }
 
 
