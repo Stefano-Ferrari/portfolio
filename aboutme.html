@@ -10,7 +10,7 @@
 <body onload="lightCheck()">
 
   <section id="overlay">
-    <div id="trigger" onclick="toggleOverlay()">
+    <div id="trigger" class="toggleOverlay">
     </div>
     <div id="projects-list">
       <div id="projects-header">
@@ -222,7 +222,7 @@
       </div>
 
       <div id="footer-central-info">
-        <img id="light-switch" onclick="lightSwitch()" src="images/switch-dark.svg">
+        <img id="light-switch" class="lightSwitch" src="images/switch-dark.svg">
         <div id="social">
           <a href="https://www.instagram.com/stefano.ferrari.ph/" target="_blank"><img src="images/instagram.svg" class="social-icon"></a>
           <a href="https://vimeo.com/stefanoferrari97" target="_blank"><img src="images/vimeo.svg" class="social-icon"></a>
@@ -236,7 +236,7 @@
 
       <div id="footer-right-menu">
         <a id="home-btn-foot" href="index.html">HOME</a>
-        <a id="projects-btn-foot" onclick="toggleOverlay()" style="text-decoration: underline; cursor: pointer;">PROJECTS</a>
+        <a id="projects-btn-foot" class="toggleOverlay" style="text-decoration: underline; cursor: pointer;">PROJECTS</a>
         <a id="about-btn-foot" href="aboutme.html">ABOUT ME</a>
       </div>
 

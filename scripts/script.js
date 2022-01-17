@@ -27,6 +27,8 @@ function lightCheck() {
   console.log(lightSwitchStatus);
 }
 
+getElementsByClassName('lightSwitch').addEventListener("click", lightSwitch);
+
 function lightSwitch() {
 
   let stylesheet = document.getElementsByTagName("link").item(0);
@@ -68,6 +70,8 @@ function resizeInstance(instance) {
 
 let overlay = document.getElementById("overlay");
 let trigger = document.getElementById("trigger");
+
+getElementsByClassName('toggleOverlay').addEventListener("click", toggleOverlay);
 
 function toggleOverlay() {
   overlay.classList.toggle("show");
