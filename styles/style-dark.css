@@ -6,7 +6,7 @@
 
 html {
   font-family: "telegraf", helvetica, sans-serif;
-  background-color: #1e1e1e; /*switch 1*/
+  background-color: #151515; /*switch 1*/
   min-width: 320px;
 }
 
@@ -50,7 +50,7 @@ html {
   background-position: 0 100%;
   background-repeat: repeat-x;
   background-size: 4px 40px;
-  color: #1e1e1e;
+  color: #151515;
 }
 
 #about-btn-nav {
@@ -68,7 +68,7 @@ html {
 
 #about-btn-nav:hover {
   background-size: 4px 40px;
-  color: #1e1e1e; /*switch 1*/
+  color: #151515; /*switch 1*/
 }
 
 #about-btn-nav2 {
@@ -80,7 +80,7 @@ html {
   background-position: 0 100%;
   background-repeat: repeat-x;
   background-size: 4px 40px;
-  color: #1e1e1e;
+  color: #151515;
 }
 
 #menu-btn-nav{
@@ -303,7 +303,7 @@ html {
     padding-top: 73px;
   bottom: 0;
   opacity: 1;
-  background-color: #1e1e1e;
+  background-color: #151515;
   transition: bottom 0.5s ease, opacity 0.3s ease;
 }
 
@@ -361,7 +361,7 @@ html {
   margin-right: 16.66vw;
   margin-bottom: 40px;
   padding: 20px;
-  background: rgba(50, 50, 50, .6);
+  background: rgba(30, 30, 30, .7);
   border-radius: 15px;
   backdrop-filter: blur(5px);
   z-index: 3;
@@ -405,7 +405,7 @@ html {
 
 .project-card {
   color: #f0f0f0;
-  background-color: #1e1e1e;
+  background-color: #151515;
   width: 100%;
   margin-bottom: 20px;
   display: flex;
@@ -916,7 +916,7 @@ visibility: hidden;
     margin-bottom: 0;
     padding-left: 0;
     padding-right: 0;
-    background-color: #1e1e1e;
+    background-color: #151515;
     backdrop-filter: inherit;
   }
 
@@ -926,7 +926,7 @@ visibility: hidden;
     padding-bottom: 20px;
     margin-top: -20px;
     margin-bottom: -20px;
-    background-color: #1e1e1e;
+    background-color: #151515;
   }
 
   #footer-left-info{
