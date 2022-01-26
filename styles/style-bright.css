@@ -20,6 +20,7 @@ html {
   left: 0px;
   margin: -8px;
   margin-top: 20px;
+  min-height: -webkit-fill-available;
   height: calc(100vh - 20px);
   color: #1f1f1f; /*switch 2*/
 
@@ -95,7 +96,7 @@ html {
 
 #desc {
   grid-column: 1/5;
-  font-size: calc(24px + (32 - 24) * ((100vw - 576px) / (2560 - 576)));
+  font-size: calc(20px + (32 - 20) * ((100vw - 576px) / (2560 - 576)));
   padding-top: 40px;
 }
 
@@ -265,15 +266,25 @@ html {
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 2;
+  opacity: 0;
   cursor: url(/images/close.png) 12 8, pointer;
-  z-index:2;
 }
 
 #trigger.show {
   top: 0;
-  opacity: 1;
-  transition: top 0.5s ease, opacity 0.3s ease;
   z-index: 2;
+  opacity: 1;
+
+  background-color: rgba(210, 210, 210, .5);
+}
+
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  #trigger.show {
+    background-color: rgba(210, 210, 210, .1);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+  }
 }
 
 #menu {
@@ -340,7 +351,7 @@ html {
   width: 100%;
     align-self: center;
     color: #ff6633;
-    font-size: calc(20px + (24 - 20) * ((100vw - 576px) / (2560 - 576)));
+    font-size: calc(18px + (24 - 18) * ((100vw - 576px) / (2560 - 576)));
     gap: 20px;
 }
 
@@ -354,7 +365,6 @@ html {
 
 #projects-list {
   position: relative;
-    z-index: 3;
   pointer-events: auto;
   margin-top: calc(60px + 3vw);
   margin-left: 16.66vw;
@@ -363,7 +373,7 @@ html {
   padding: 20px;
   background: rgba(210, 210, 210, .7);
   border-radius: 15px;
-  backdrop-filter: blur(5px);
+  z-index: 3;
 }
 
 .grid {
@@ -549,7 +559,7 @@ html {
 }
 
 .project-info{
-  font-size: calc(20px + (32 - 20) * ((100vw - 576px) / (2560 - 576)));
+  font-size: calc(18px + (32 - 18) * ((100vw - 576px) / (2560 - 576)));
   width: 100%;
 }
 
@@ -576,7 +586,7 @@ html {
 
 #project-desc{
   grid-column: 1/span 3;
-  font-size: calc(20px + (32 - 20) * ((100vw - 576px) / (2560 - 576)));
+  font-size: calc(18px + (32 - 18) * ((100vw - 576px) / (2560 - 576)));
 }
 
 #project-desc a{
@@ -622,12 +632,12 @@ html {
 .gallery-desc{
   grid-column: span 3;
 
-  font-size: calc(20px + (48 - 20) * ((100vw - 576px) / (2560 - 576)));
+  font-size: calc(18px + (32 - 18) * ((100vw - 576px) / (2560 - 576)));
 }
 
 .gallery-span{
   grid-column: span 6;
-  height: 1px;
+  height:1px;
 }
 
 .iframe-figma{
