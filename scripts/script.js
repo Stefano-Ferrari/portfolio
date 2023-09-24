@@ -2,6 +2,53 @@ let bright = '/styles/style-bright.css';
 let dark = '/styles/style-dark.css';
 let lightSwitchStatus;
 let switchIMG = document.getElementById("light-switch");
+let footerStatus = document.getElementById("footer");
+/*const ball = document.querySelector('.ball');
+const maxX = window.innerWidth - ball.clientWidth;
+const maxY = window.innerHeight - ball.clientHeight;
+const speed = 1; // You can adjust the speed as needed
+let posX = window.innerWidth/2;
+let posY = window.innerHeight/2;
+let angle = Math.random() * Math.PI * 2;*/
+
+/*function animateBall() {
+  posX += Math.cos(angle) * speed;
+  posY += Math.sin(angle) * speed;
+
+  if (posX < 0 || posX > maxX-(ball.clientWidth/2)) {
+    angle = Math.PI - angle;
+  }
+
+  if (posY < -ball.clientHeight/2 || posY > maxY-(ball.clientHeight)) {
+    angle = -angle;
+  }
+
+  ball.style.transform = `translate(${posX}px, ${posY}px)`;
+  requestAnimationFrame(animateBall);
+}
+
+function resetBallPosition() {
+  posX = window.innerWidth/2;
+  posY = window.innerHeight/2;
+  ball.style.transform = `translate(${posX}px, ${posY}px)`;
+  angle = Math.random() * Math.PI * 2;
+}
+
+function ballClickHandler() {
+  // Your code here for what should happen when the ball is clicked
+  console.log("Ball clicked!");
+}
+
+ball.addEventListener('click', ballClickHandler);
+window.addEventListener('resize', resetBallPosition);
+
+animateBall();*/
+
+function toggleContact() {
+  footerStatus.classList.toggle('hiddenFooter');
+  footerStatus.classList.toggle('showFooter');
+}
+
 
 function lightCheck() {
   if (localStorage.getItem("currentStatus") == null) {
@@ -24,7 +71,7 @@ function lightCheck() {
     switchIMG.setAttribute("src", "/images/switch-bright.svg");
   }
 
-  console.log(lightSwitchStatus);
+  //console.log(lightSwitchStatus);
 }
 
 let lightSwitchButton = document.getElementsByClassName("lightSwitch");

@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  <!--<div id="light-switch" class="ball lightSwitch"></div>-->
 
   <section id="overlay">
     <div id="trigger" class="toggleOverlay">
@@ -18,7 +19,6 @@
     <div id="projects-list">
       <div id="projects-header">
         <h1>PROJECTS</h1>
-        <iframe id="reel" src="https://player.vimeo.com/video/661918651?h=1863e68396" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
       </div>
 
       <div class="grid">
@@ -275,8 +275,8 @@
   <div class="wrapper">
 
     <div id="nav">
-      <a id="home-btn-nav2" href="/index">Stefano Ferrari</a>
-      <a id="about-btn-nav2" href="/aboutme">About me</a>
+      <div style="display:flex;"><a id="home-btn-nav" href="/index">Stefano Ferrari</a> <div id="light-switch" class="lightSwitch"></div></div>
+      <div> <a class="toggleOverlay" id="prj-btn-nav">Projects</a><a id="about-btn-nav2" href="/aboutme">About me</a> </div>
       <a id="menu-btn-nav" class="toggleMenu"><img src="/images/menu.svg"></a>
     </div>
 
@@ -285,17 +285,17 @@
     <h2 id="about-title-2">STUDIES</h2>
 
     <div id="about-desc">
-      I’m Stefano Ferrari, I've just completed my Master Degree in Communication Design at Politecnico di Milano.<br>
-      In the beginning, I chose to start a career in design because I wanted to be a Game Designer, since I like coding and play videogames but,
-      while studying, I realized that I also really liked to shoot photos and videos (and then someone told me I was quite good at it).<br>
+      I've recently completed my Master Degree in Communication Design at Politecnico di Milano.<br>
+      In the beginning, I chose to start a career in design because I wanted to be a Game Designer - since I like coding and videogames - but,
+      while studying, I discovered how much I loved shooting photos and video that could mean something to an audience.<br>
       <br>
-      Currently, I'm working as a videomaker at Malaka Studio in Milan.
+      Currently, I'm working as a videomaker and photographer at Malaka Studio in Milan.
     </div>
 
     <div id="about-work">
       <h3>Feb 2022 - Present</h3>
       Videomaker and Photographer @Malaka
-      <p>I'm working in Milan with Malaka Studio as a full-time videomaker and photographer. The main focus of the stduio is on fashion and interior design industries.
+      <p>I'm working in Milan with Malaka Studio as a full-time videomaker and photographer, mainly for the fashion and interior design industries.
       We shoot adv, social contents and documentaries. My role in the studio goes from video editor and colorist to camera operator and director.</p>
 
       <h3>July 2021 - March 2023</h3>
@@ -338,32 +338,25 @@
       <h4>88/100</h4>
     </div>
 
-    <div id="footer">
+    <div id="footer" class="hiddenFooter">
 
-      <div id="footer-left-info">
-        <div id="social">
-          <a href="https://www.instagram.com/stefano.ferrari.ph/" target="_blank"><img src="/images/instagram.svg" class="social-icon"></a>
-          <a href="https://vimeo.com/stefanoferrari97" target="_blank"><img src="/images/vimeo.svg" class="social-icon"></a>
-          <a href="https://www.behance.net/stefanoferrari" target="_blank"><img src="/images/behance.svg" class="social-icon"></a>
-          <a href="https://www.linkedin.com/in/stefano-ferrari-316258162/" target="_blank"><img src="/images/linkedin.svg" class="social-icon"></a>
-        </div>
-        <a href="tel:+393493120605" style="text-decoration: none;">+39 349 312 0605</a>
-        <a href="mailto:stefano.ferrari.sf97@gmail.com" style="text-decoration: none;">stefano.ferrari.sf97@gmail.com</a>
-      </div>
+      <div id="contact-container"><div id="footer-contact-btn" onclick="toggleContact()">CONTACTS</div></div>
 
-      <div id="footer-central-info">
-        <div id="light-switch" class="lightSwitch" style="cursor: pointer; border-radius: 100px; height: 20px; width:20px; background-color: #ff6633;"></div>
-    <div> </div>
-        <div>
+          <a id="mail" href="mailto:stefano.ferrari.sf97@gmail.com" style="text-decoration: none;">stefano.ferrari.sf97@gmail.com</a>
+          <a id="phone" href="tel:+393493120605" style="text-decoration: none;">+39 349 312 0605</a>
+
+            <a href="https://www.instagram.com/stefano.ferrari.ph/" target="_blank">Instagram</a>
+            <a href="https://vimeo.com/stefanoferrari97" target="_blank">Vimeo</a>
+            <a href="https://www.behance.net/stefanoferrari" target="_blank">Behance</a>
+            <a href="https://www.linkedin.com/in/stefano-ferrari-316258162/" target="_blank">LinkedIn</a>
+
+
+
+
+        <!--<div id="light-switch" class="lightSwitch" style="cursor: pointer; border-radius: 100px; height: 20px; width:20px; background-color: #ff6633;"></div>-->
+        <div id="credit">
           Stefano Ferrari ©
         </div>
-      </div>
-
-      <div id="footer-right-menu">
-        <a id="home-btn-foot" href="/index">HOME</a>
-        <a id="projects-btn-foot" class="toggleOverlay" style="text-decoration: underline; cursor: pointer;">PROJECTS</a>
-        <a id="about-btn-foot" href="/aboutme">ABOUT ME</a>
-      </div>
 
     </div>
 
