@@ -418,7 +418,7 @@ z-index: 1;
   opacity: 1;
   background-color: #151515; /*switch 1*/
   transition: bottom 0.5s ease, opacity 0.3s ease;
-  z-index: 2;
+  z-index: 5;
   overflow: hidden;
 }
 
@@ -1083,16 +1083,16 @@ visibility: hidden;
   }
 
   #nav {
-    z-index: 2;
+    z-index: 6;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 21px;
     margin-top: -20px;
     margin-bottom: -20px;
     background-color: #151515; /*switch 1*/
   }
 
   #menu-btn-nav{
-    z-index: 3;
+    z-index: 6;
   }
 
   #footer-left-info{

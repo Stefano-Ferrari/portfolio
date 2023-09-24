@@ -1,6 +1,6 @@
 @font-face {
   font-family: telegraf;
-  src: url(font/Telegraf-regular.otf);
+  src: url(font/Telegraf-Regular.otf);
   font-weight: regular;
 }
 /*e5e5e5*/
@@ -418,7 +418,7 @@ z-index: 1;
   opacity: 1;
   background-color: #e5e5e5; /*switch 1*/
   transition: bottom 0.5s ease, opacity 0.3s ease;
-  z-index: 2;
+  z-index: 5;
   overflow: hidden;
 }
 
@@ -853,6 +853,7 @@ z-index: 1;
         grid-row: 2;
                 padding-right: 0;
         padding-bottom: 60px;
+        padding-top: 5px;
   }
 
   #about-title-1{
@@ -1083,7 +1084,7 @@ visibility: hidden;
   }
 
   #nav {
-    z-index: 2;
+    z-index: 6;
     padding-top: 20px;
     padding-bottom: 20px;
     margin-top: -20px;
@@ -1092,7 +1093,7 @@ visibility: hidden;
   }
 
   #menu-btn-nav{
-    z-index: 3;
+    z-index: 6;
   }
 
   #footer-left-info{
