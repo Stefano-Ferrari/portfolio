@@ -32,13 +32,13 @@ html {
   align-content: stretch;
   left: 0px;
   margin: -8px;
-  margin-top: 20px;
+  margin-top: 30px;
   min-height: -webkit-fill-available;
-  height: calc(100vh - 20px);
+  height: calc(100vh - 30px);
   color: #1f1f1f; /*switch 2*/
 
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 #nav {
@@ -135,11 +135,9 @@ html {
 }
 
 #desc {
-  grid-column: 2/6;
-  font-size: calc(17px + (20 - 17) * ((100vw - 576px) / (2560 - 576)));
-  padding-top: 40px;
-  padding-left: 40px;
-  padding-right: 40px
+  grid-column: 1/6;
+  font-size: calc(25px + (30 - 25) * ((100vw - 576px) / (2560 - 576)));
+  padding-top: 50vh;
 }
 
 #video-homepage{
