@@ -1072,7 +1072,7 @@ html {
     visibility: visible;
   }
 
-  .menu-open {
+  .toggleMenu {
     filter: invert(66%) sepia(56%) saturate(5828%) hue-rotate(338deg) brightness(102%) contrast(105%);
   }
 

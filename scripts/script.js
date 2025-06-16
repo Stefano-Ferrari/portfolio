@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const tags = document.querySelectorAll('.filter');
   const cards = document.querySelectorAll('.card');
 
-  console.log(cards);
+  //console.log(cards);
 
   tags.forEach(tag => {
     tag.addEventListener('click', () => {
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Filter cards
       cards.forEach(card => {
 
-        console.log(card);
+        //console.log(card);
         const cardTags = card.dataset.tags.split(' ');
         if (activeTags.length === 0 || activeTags.some(tag => cardTags.includes(tag))) {
           card.classList.remove('hidden');
